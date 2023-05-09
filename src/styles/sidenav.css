@@ -1,0 +1,87 @@
+.sidenav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: stretch;
+    position: relative;
+    flex-shrink: 0;
+    overflow-x: hidden;
+    width: 275px;
+    position: fixed;
+    left: 0;
+    top: 55px;
+    bottom: 0;
+    border-right: 1px solid #343a40;
+    background: #202020;
+    transition: width 200ms ease-in-out;
+}
+
+.sidenav-top {
+    display: flex;
+    align-items: center;
+    height: 85px;
+    width: 100%;
+    padding: .5rem 1rem .5rem 1rem;
+    background: #212529;
+}
+
+.sidenav-user-profile {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.sidenav-user-logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.user-logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: .5rem;
+}
+
+.user-name-text {
+    color: #cad2c5;
+}
+
+.user-logo-img {
+    height: 100%;
+    width: 100%;
+}
+
+.sidenav-middle {
+    width: 100%;
+}
+
+.sidenav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.list-item {
+    padding: .5rem;
+    margin: .5rem;
+    background: #343a40;
+    border-radius: 5px;
+}
+
+.sidenav-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-decoration: none;
+    color: #cad2c5;
+}
+
+.sidenav-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    border-top: 2px solid #343a40;
+    background: #212529;
+}

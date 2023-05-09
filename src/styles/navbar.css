@@ -1,0 +1,27 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    height: 55px;
+    top: 0;
+    z-index: 1;
+    padding: 0 1.5rem;
+    width: 100%;
+    background: #202020;
+    box-shadow: 0 2px 35px 0 rgb(0, 0, 0, .5);
+}
+
+.brand-name-link {
+    text-decoration: none;
+    font-size: 32px;
+    font-weight: 700;
+    color: #84a98c;
+}
+
+.cart-link {
+    text-decoration: none;
+    color: #cad2c5;
+    font-size: 16px;
+    font-weight: 500;
+}
