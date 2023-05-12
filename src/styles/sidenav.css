@@ -21,7 +21,7 @@
     align-items: center;
     height: 85px;
     width: 100%;
-    padding: .5rem 1rem .5rem 1rem;
+    padding: .5rem;
     background: #212529;
 }
 
@@ -64,13 +64,7 @@
 
 .list-item {
     margin: .5rem;
-    background: #343a40;
     border-radius: 5px;
-    transition: 200ms ease-in-out;
-}
-
-.list-item:hover {
-    background: #495057;
     transition: 200ms ease-in-out;
 }
 
@@ -81,11 +75,18 @@
     width: 100%;
     padding: .5rem;
     text-decoration: none;
+    background: #343a40;
+    border-radius: 5px;
     color: #cad2c5;
 }
 
 .sidenav-link.active {
     background: #495057;
+}
+
+.sidenav-link:hover {
+    background: #495057;
+    transition: 200ms ease-in-out;
 }
 
 .sidenav-bottom {

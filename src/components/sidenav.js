@@ -1,17 +1,27 @@
 import { Link } from 'react-router-dom';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import '../styles/sidenav.css'
 import user from '../assets/user.png'
 
 const Sidenav = () => {
 
     const [activeLink, setActiveLink] = useState('');
+    useEffect(() => {
+        const linkStored = localStorage.getItem("activeLink");
+        if (linkStored) {
+            setActiveLink(linkStored);
+        }
+    }, []);
+    function linkSelect(link) {
+        setActiveLink(link);
+        localStorage.setItem("activeLink", link);
+    }
 
     return (
         <aside className="sidenav">
             <div className="sidenav-top">
                 <div className="sidenav-user-profile">
-                    <Link to="/settings" className='sidenav-link'>
+                    <Link to="/settings" className={`sidenav-link ${activeLink === '/settings' ? 'active' : ''}`} onClick={() => linkSelect('/settings')}>
                         <div className="sidenav-user-logo-name">
                             <div className="user-logo">
                                 <img src={user} alt="" className="user-logo-img" />
@@ -29,19 +39,19 @@ const Sidenav = () => {
             <div className="sidenav-middle">
                 <ul className='sidenav-list'>
                     <li className="list-item">
-                        <Link to="/" className={`sidenav-link ${activeLink === '/' ? 'active' : ''}`} onClick={() => setActiveLink('/')}>
+                        <Link to="/" className={`sidenav-link ${activeLink === '/' ? 'active' : ''}`} onClick={() => linkSelect('/')}>
                             <div className="sidenav-link-text">Home</div>
                             <span className="material-symbols-outlined">home</span>
                         </Link>
                     </li>
                     <li className="list-item">
-                        <Link to="/explore" className={`sidenav-link ${activeLink === '/explore' ? 'active' : ''}`} onClick={() => setActiveLink('/explore')}>
+                        <Link to="/explore" className={`sidenav-link ${activeLink === '/explore' ? 'active' : ''}`} onClick={() => linkSelect('/explore')}>
                             <span className="sidenav-link-text">Explore news</span>
                             <span className="material-symbols-outlined">explore</span>
                         </Link>
                     </li>
                     <li className="list-item">
-                        <Link to="/saved" className={`sidenav-link ${activeLink === '/saved' ? 'active' : ''}`} onClick={() => setActiveLink('/saved')}>
+                        <Link to="/saved" className={`sidenav-link ${activeLink === '/saved' ? 'active' : ''}`} onClick={() => linkSelect('/saved')}>
                             <div className="sidenav-link-text">Saved news</div>
                             <span className="material-symbols-outlined">star</span>
                         </Link>
@@ -51,7 +61,7 @@ const Sidenav = () => {
             <div className="sidenav-bottom">
                 <ul className="sidenav-list">
                     <li className="list-item">
-                        <Link to="/settings" className={`sidenav-link ${activeLink === '/settings' ? 'active' : ''}`} onClick={() => setActiveLink('/settings')}>
+                        <Link to="/settings" className={`sidenav-link ${activeLink === '/settings' ? 'active' : ''}`} onClick={() => linkSelect('/settings')}>
                             <div className="sidenav-link-text">Settings</div>
                             <span className="material-symbols-outlined">settings</span>
                         </Link>
