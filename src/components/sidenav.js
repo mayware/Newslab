@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 import '../styles/sidenav.css'
 import user from '../assets/user.png'
 
-const Sidenav = () => {
+const Sidenav = ({ showSidenav }) => {
 
     const [activeLink, setActiveLink] = useState('');
-    const [showSidenav, setShowSidenav] = useState('');
+
     useEffect(() => {
         const linkStored = localStorage.getItem("activeLink");
         if (linkStored) {
@@ -17,12 +17,9 @@ const Sidenav = () => {
         setActiveLink(link);
         localStorage.setItem("activeLink", link);
     }
-    function sidenavShow() {
-        setShowSidenav = !setShowSidenav;
-    }
 
     return (
-        <aside className={`sidenav ${showSidenav === '' ? 'close' : ''}`} onClick={sidenavShow}>
+        <aside className={`sidenav ${showSidenav ? 'show' : ''}`}>
             <div className="sidenav-top">
                 <div className="sidenav-user-profile">
                     <Link to="/settings" className={`sidenav-link ${activeLink === '/settings' ? 'active' : ''}`} onClick={() => linkSelect('/settings')}>

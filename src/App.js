@@ -8,11 +8,19 @@ import Saved from './components/Saved';
 import Settings from './components/Settings';
 
 function App() {
+
+  const [showSidenav, setShowSidenav] = useState(false);
+
+  function sidenavToggle() {
+    console.log("Clicked");
+    setShowSidenav(!showSidenav);
+  }
+
   return (
     <Router>
       <div className="App">
-        <Navbar />
-        <Sidenav />
+        <Navbar sidenavToggle={sidenavToggle} />
+        <Sidenav showSidenav={showSidenav} />
         <div className="container">
           <Routes>
             <Route exact path="/" element={<Home />} />
