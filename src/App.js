@@ -10,10 +10,11 @@ import Settings from './components/Settings';
 function App() {
 
   const [showSidenav, setShowSidenav] = useState(false);
+  const [resizeContent, setResizeContent] = useState(false);
 
   function sidenavToggle() {
-    console.log("Clicked");
     setShowSidenav(!showSidenav);
+    setResizeContent(!resizeContent);
   }
 
   return (
@@ -23,7 +24,7 @@ function App() {
         <Sidenav showSidenav={showSidenav} />
         <div className="container">
           <Routes>
-            <Route exact path="/" element={<Home />} />
+            <Route exact path="/" element={<Home resizeContent={resizeContent} />} />
             <Route path="/explore" element={<Explore />} />
             <Route path="/saved" element={<Saved />} />
             <Route path="/settings" element={<Settings />} />

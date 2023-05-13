@@ -11,14 +11,19 @@ html {
 }
 
 .container {
-  padding: 3rem 0 0 17.1rem;
   background: #202c39;
   min-height: 100vh;
   border: 1px solid #000;
 }
 
 .content {
+  margin: 3.5rem 0 0 17.1rem;
   padding: .5rem;
+  transition: all 0.5s ease;
   border: 1px solid #000;
   color: #dad7cd;
+}
+
+.content.show {
+  margin-left: 0;
 }
