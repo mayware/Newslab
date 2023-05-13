@@ -25,9 +25,9 @@ function App() {
         <div className="container">
           <Routes>
             <Route exact path="/" element={<Home resizeContent={resizeContent} />} />
-            <Route path="/explore" element={<Explore />} />
-            <Route path="/saved" element={<Saved />} />
-            <Route path="/settings" element={<Settings />} />
+            <Route path="/explore" element={<Explore resizeContent={resizeContent} />} />
+            <Route path="/saved" element={<Saved resizeContent={resizeContent} />} />
+            <Route path="/settings" element={<Settings resizeContent={resizeContent} />} />
           </Routes>
         </div>
       </div>

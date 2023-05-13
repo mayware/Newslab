@@ -1,8 +1,8 @@
 import Categories from "./Categories";
 
-const Explore = () => {
+const Explore = ({ resizeContent }) => {
     return (
-        <div className="content">
+        <div className={`content ${resizeContent ? 'show' : ''}`}>
             <h1>Explore page</h1>
             <Categories />
         </div>
