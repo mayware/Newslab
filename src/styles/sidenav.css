@@ -16,6 +16,10 @@
     transition: width 200ms ease-in-out;
 }
 
+.sidenav.show {
+    display: none;
+}
+
 .sidenav-top {
     display: flex;
     align-items: center;

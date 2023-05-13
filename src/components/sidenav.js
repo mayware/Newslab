@@ -6,6 +6,7 @@ import user from '../assets/user.png'
 const Sidenav = () => {
 
     const [activeLink, setActiveLink] = useState('');
+    const [showSidenav, setShowSidenav] = useState('');
     useEffect(() => {
         const linkStored = localStorage.getItem("activeLink");
         if (linkStored) {
@@ -16,9 +17,12 @@ const Sidenav = () => {
         setActiveLink(link);
         localStorage.setItem("activeLink", link);
     }
+    function sidenavShow() {
+        setShowSidenav = !setShowSidenav;
+    }
 
     return (
-        <aside className="sidenav">
+        <aside className={`sidenav ${showSidenav === '' ? 'close' : ''}`} onClick={sidenavShow}>
             <div className="sidenav-top">
                 <div className="sidenav-user-profile">
                     <Link to="/settings" className={`sidenav-link ${activeLink === '/settings' ? 'active' : ''}`} onClick={() => linkSelect('/settings')}>
@@ -31,7 +35,7 @@ const Sidenav = () => {
                             </div>
                         </div>
                         <div className="sidenav-user-edit">
-                            <span class="material-symbols-outlined">edit_square</span>
+                            <span className="material-symbols-outlined">edit_square</span>
                         </div>
                     </Link>
                 </div>
@@ -46,13 +50,13 @@ const Sidenav = () => {
                     </li>
                     <li className="list-item">
                         <Link to="/explore" className={`sidenav-link ${activeLink === '/explore' ? 'active' : ''}`} onClick={() => linkSelect('/explore')}>
-                            <span className="sidenav-link-text">Explore news</span>
+                            <span className="sidenav-link-text">Explore</span>
                             <span className="material-symbols-outlined">explore</span>
                         </Link>
                     </li>
                     <li className="list-item">
                         <Link to="/saved" className={`sidenav-link ${activeLink === '/saved' ? 'active' : ''}`} onClick={() => linkSelect('/saved')}>
-                            <div className="sidenav-link-text">Saved news</div>
+                            <div className="sidenav-link-text">Saved</div>
                             <span className="material-symbols-outlined">star</span>
                         </Link>
                     </li>

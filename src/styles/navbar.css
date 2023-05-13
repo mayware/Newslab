@@ -6,10 +6,38 @@
     height: 55px;
     top: 0;
     z-index: 1;
-    padding: 0 1.5rem;
+    padding: 0 .5rem;
     width: 100%;
     background: #202020;
     box-shadow: 0 2px 35px 0 rgb(0, 0, 0, .5);
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.sidenav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    padding: .5rem;
+    background: none;
+    border: 1px solid #495057;
+    border-radius: 5px;
+    color: #cad2c5;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
+}
+
+.sidenav-btn:hover {
+    background: #343a40;
+    transition: 200ms ease-in-out;
+}
+
+.btn-icon-open {
+    display: none;
 }
 
 .brand-name-link {
