@@ -77,7 +77,7 @@
     width: 100%;
     padding: .5rem;
     text-decoration: none;
-    background: #343a40;
+    /* background: #343a40; */
     border-radius: 5px;
     color: #cad2c5;
 }
@@ -87,7 +87,7 @@
 }
 
 .sidenav-link:hover {
-    background: #495057;
+    background: #343a40;
     transition: 200ms ease-in-out;
 }
 
