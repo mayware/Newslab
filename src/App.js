@@ -5,7 +5,9 @@ import Sidenav from './components/sidenav';
 import Home from './components/Home';
 import Explore from './components/Explore';
 import Saved from './components/Saved';
+import Cart from './components/Cart';
 import Settings from './components/Settings';
+// lCuAJXNj8JAoxIZ9EjAQQcdEjuOb9HhDROs2RvpmgvA
 
 function App() {
 
@@ -27,6 +29,7 @@ function App() {
             <Route exact path="/" element={<Home resizeContent={resizeContent} />} />
             <Route path="/explore" element={<Explore resizeContent={resizeContent} />} />
             <Route path="/saved" element={<Saved resizeContent={resizeContent} />} />
+            <Route path="/cart" element={<Cart resizeContent={resizeContent} />} />
             <Route path="/settings" element={<Settings resizeContent={resizeContent} />} />
           </Routes>
         </div>

@@ -10,7 +10,11 @@ const Navbar = ({ sidenavToggle }) => {
                 </button>
                 <NavLink to="/" className="navbar-link brand-name-link">Newslab</NavLink>
             </div>
-            <div className="navbar-right"></div>
+            <div className="navbar-right">
+                <NavLink to="/cart" className="navbar-link">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </NavLink>
+            </div>
         </nav>
     );
 }
