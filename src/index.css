@@ -11,16 +11,16 @@ html {
 }
 
 .container {
-  background: #202c39;
+  background: #151515;
   min-height: 100vh;
-  border: 1px solid #000;
+  border: 1px solid #fff;
 }
 
 .content {
   margin: 3.5rem 0 0 17.1rem;
   padding: .5rem;
   transition: all 0.5s ease;
-  border: 1px solid #000;
+  border: 1px solid #fff;
   color: #dad7cd;
 }
 
