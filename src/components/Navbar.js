@@ -8,7 +8,7 @@ const Navbar = ({ sidenavToggle }) => {
                 <button className="sidenav-btn" onClick={sidenavToggle}>
                     <span className="material-symbols-outlined btn-icon">menu</span>
                 </button>
-                <NavLink to="/" className="navbar-link brand-name-link">Newslab</NavLink>
+                <NavLink to="/" className="navbar-link brand-name-link">Recaller</NavLink>
             </div>
             <div className="navbar-right">
                 <NavLink to="/cart" className="navbar-link">

@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    height: 55px;
+    height: 50px;
     top: 0;
     z-index: 1;
     padding: 0 1.5rem 0 .5rem;
@@ -21,30 +21,38 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-right: .5rem;
     padding: .5rem;
     background: none;
     border: 1px solid transparent;
     border-radius: 5px;
     color: #cad2c5;
     cursor: pointer;
-    transition: 200ms ease-in-out;
 }
 
 .sidenav-btn:hover {
     border: 1px solid #495057;
     background: #343a40;
-    transition: 200ms ease-in-out;
 }
 
 .navbar-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    border: 1px solid transparent;
+    border-radius: 5px;
     text-decoration: none;
     color: #cad2c5;
 }
 
+.navbar-link:hover {
+    border: 1px solid #495057;
+    background: #343a40;
+}
+
 .brand-name-link {
     text-decoration: none;
-    font-size: 32px;
+    font-size: 22px;
     font-weight: 700;
     color: #84a98c;
 }

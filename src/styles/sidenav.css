@@ -8,7 +8,7 @@
     width: 275px;
     position: fixed;
     left: 0;
-    top: 55px;
+    top: 50px;
     bottom: 0;
     border-right: 1px solid #343a40;
     background: #202020;
@@ -78,7 +78,6 @@
     text-decoration: none;
     border-radius: 5px;
     color: #cad2c5;
-    transition: 200ms ease-in-out;
 }
 
 .sidenav-link.active {
@@ -87,7 +86,6 @@
 
 .sidenav-link:hover {
     background: #343a40;
-    transition: 200ms ease-in-out;
 }
 
 .sidenav-bottom {
