@@ -40,8 +40,8 @@ const Sidenav = ({ showSidenav, linkSelect, activeLink }) => {
                     </li>
                     <li className="list-item">
                         <Link to="/saved" className={`sidenav-link ${activeLink === '/saved' ? 'active' : ''}`} onClick={() => linkSelect('/saved')}>
-                            <div className="sidenav-link-text">Saved</div>
-                            <span className="material-symbols-outlined">star</span>
+                            <div className="sidenav-link-text">Watchlist</div>
+                            <span className="material-symbols-outlined">visibility</span>
                         </Link>
                     </li>
                 </ul>

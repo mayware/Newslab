@@ -8,7 +8,7 @@
     width: 275px;
     position: fixed;
     left: 0;
-    top: 50px;
+    top: 55px;
     bottom: 0;
     border-right: 1px solid #343a40;
     background: #202020;
@@ -24,6 +24,7 @@
     height: 85px;
     width: 100%;
     padding: .5rem;
+    border-bottom: 1px solid #343a40;
     background: #212529;
 }
 
@@ -92,6 +93,6 @@
     position: absolute;
     bottom: 0;
     width: 100%;
-    border-top: 2px solid #343a40;
+    border-top: 1px solid #343a40;
     background: #212529;
 }

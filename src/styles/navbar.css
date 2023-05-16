@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    height: 50px;
+    height: 55px;
     top: 0;
     z-index: 1;
     padding: 0 1.5rem 0 .5rem;
@@ -12,7 +12,8 @@
     box-shadow: 0 2px 35px 0 rgb(0, 0, 0, .5);
 }
 
-.navbar-left {
+.navbar-left,
+.navbar-right {
     display: flex;
     align-items: center;
 }
@@ -31,7 +32,7 @@
 }
 
 .sidenav-btn:hover {
-    border: 1px solid #495057;
+    border-color: #495057;
     background: #343a40;
 }
 
@@ -47,7 +48,7 @@
 }
 
 .navbar-link.active {
-    border: 1px solid #495057;
+    border-color: #495057;
     background: #343a40;
 }
 
@@ -61,6 +62,35 @@
     font-size: 20px;
     font-weight: 700;
     color: #84a98c;
+}
+
+.create-post-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    margin-right: .5rem;
+    background: none;
+    color: #cad2c5;
+    border: 1px solid #84a98c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.create-post-btn:hover {
+    border-color: #495057;
+    background: #343a40;
+}
+
+#loginLink {
+    margin-right: .5rem;
+}
+
+.create-btn-text {
+    margin-right: .5rem;
+    font-size: 18px;
+    font-weight: 500;
+    color: #cad2c5;
 }
 
 .cart-link {
