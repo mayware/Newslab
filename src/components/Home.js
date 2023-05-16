@@ -8,8 +8,6 @@ const Home = ({ resizeContent }) => {
 
     return (
         <div className={`content ${resizeContent ? 'show' : ''}`}>
-            <h1>Home screen</h1>
-            <span>Here the user will see his recommendations and explored news</span>
             {news && <Newslist news={news} />}
         </div>
     );
