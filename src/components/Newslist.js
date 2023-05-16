@@ -1,6 +1,7 @@
 const Newslist = ({ news }) => {
     return (
         <div className="news-content">
+            {/* <span className="news-track-title">Top recent news</span> */}
             <div className="news-track">
                 {news.articles.map((nws, index) => (
                     <div className="news-entity" key={index}>
@@ -9,7 +10,8 @@ const Newslist = ({ news }) => {
                         </div>
                         <div className="news-body">
                             <p className="news-title">{nws.title}</p>
-                            <p className="news-date">{nws.publishedAt}</p>
+                            <span className="news-publicsher">{nws.source.name}</span>
+                            <span className="news-date">{nws.publishedAt}</span>
                         </div>
                     </div>
                 ))}
