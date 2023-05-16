@@ -13,6 +13,18 @@ function App() {
 
   const [showSidenav, setShowSidenav] = useState(false);
   const [resizeContent, setResizeContent] = useState(false);
+  const [activeLink, setActiveLink] = useState('');
+
+  useEffect(() => {
+    const linkStored = localStorage.getItem("activeLink");
+    if (linkStored) {
+      setActiveLink(linkStored);
+    }
+  }, []);
+  function linkSelect(link) {
+    setActiveLink(link);
+    localStorage.setItem("activeLink", link);
+  }
 
   function sidenavToggle() {
     setShowSidenav(!showSidenav);
@@ -22,8 +34,8 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Navbar sidenavToggle={sidenavToggle} />
-        <Sidenav showSidenav={showSidenav} />
+        <Navbar sidenavToggle={sidenavToggle} linkSelect={linkSelect} activeLink={activeLink} />
+        <Sidenav showSidenav={showSidenav} linkSelect={linkSelect} activeLink={activeLink} />
         <div className="container">
           <Routes>
             <Route exact path="/" element={<Home resizeContent={resizeContent} />} />

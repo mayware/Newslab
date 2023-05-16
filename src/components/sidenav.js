@@ -3,20 +3,7 @@ import { useEffect, useState } from 'react';
 import '../styles/sidenav.css'
 import user from '../assets/user.png'
 
-const Sidenav = ({ showSidenav }) => {
-
-    const [activeLink, setActiveLink] = useState('');
-
-    useEffect(() => {
-        const linkStored = localStorage.getItem("activeLink");
-        if (linkStored) {
-            setActiveLink(linkStored);
-        }
-    }, []);
-    function linkSelect(link) {
-        setActiveLink(link);
-        localStorage.setItem("activeLink", link);
-    }
+const Sidenav = ({ showSidenav, linkSelect, activeLink }) => {
 
     return (
         <aside className={`sidenav ${showSidenav ? 'show' : ''}`}>
