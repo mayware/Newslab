@@ -2,32 +2,33 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    /* border: 1px solid #343a40; */
 }
 
 .news-track-title {
     color: #cad2c5;
 }
 
-.news-track {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 35px;
-    justify-items: center;
+.carousel-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
 }
 
-.news-entity {
+.news-block {
     display: grid;
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 5px;
+    margin: auto;
     position: relative;
-    border: 1px solid #343a40;
-    background: #202020;
+    border: 1px solid #000;
     border-radius: 5px;
-    min-width: 285px;
-    max-width: 285px;
-    box-shadow: 0px 0px 15px #000;
+    min-width: 235px;
+    max-width: 235px;
+    max-height: 200px;
 }
 
 .news-image {
