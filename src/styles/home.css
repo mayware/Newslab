@@ -21,6 +21,7 @@
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 5px;
+    position: relative;
     border: 1px solid #343a40;
     background: #202020;
     border-radius: 5px;
@@ -32,8 +33,6 @@
 .news-image {
     height: 250px;
     width: 100%;
-    padding: .5rem;
-    background: #151515;
     border: 1px solid #101010;
     border-radius: 5px;
 }
@@ -50,17 +49,32 @@
     display: flex;
     align-items: flex-start;
     flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     width: 100%;
-    background: #151515;
     padding: .5rem;
-    border: 1px solid #202020;
-    border-radius: 5px;
     text-align: justify;
+    background-color: rgba(0, 0, 0, .7);
+    border: 1px solid #101010;
+    border-radius: 5px;
 }
 
 .news-title {
+    width: 100%;
+    font-size: 16px;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
     margin-bottom: .5rem;
     color: #cad2c5;
+}
+
+.news-publicsher {
+    font-size: 12px;
+    font-weight: 500;
+    color: #04e762;
 }
 
 .news-date {

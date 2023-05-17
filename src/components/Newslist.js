@@ -11,7 +11,7 @@ const Newslist = ({ news }) => {
                         <div className="news-body">
                             <p className="news-title">{nws.title}</p>
                             <span className="news-publicsher">{nws.source.name}</span>
-                            <span className="news-date">{nws.publishedAt}</span>
+                            {/* <span className="news-date">{nws.publishedAt.split("T")[0]}</span> */}
                         </div>
                     </div>
                 ))}
