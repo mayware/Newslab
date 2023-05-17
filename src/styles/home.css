@@ -4,18 +4,15 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    /* border: 1px solid #444; */
 }
 
 .news-section {
     width: 100%;
-    padding: 1.5rem;
-    /* border: 1px solid #fff; */
 }
 
 .news-track-title {
+    padding: 1rem 0 0 1rem;
     text-align: start;
-    width: 100%;
 }
 
 .news-track-title-text {
@@ -29,8 +26,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    min-height: 275px;
-    max-height: 275px;
+    height: 200px;
 }
 
 .news-block {
@@ -38,14 +34,14 @@
     position: relative;
     border: 1px solid #000;
     border-radius: 5px;
-    min-width: 250px;
-    max-width: 250px;
-    height: 100%;
+    min-width: 255px;
+    max-width: 255px;
+    border: 1px solid #000;
 }
 
 .news-image {
     flex-grow: 1;
-    height: 250px;
+    height: 175px;
     width: 100%;
     border: 1px solid #101010;
     border-radius: 5px;

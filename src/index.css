@@ -15,21 +15,24 @@ body {
 }
 
 .container {
+  margin: 3.5rem 0 0 17.2rem;
+  transition: all 0.5s ease;
+  color: #dad7cd;
   background: #151515;
   min-height: 100vh;
 }
 
-.content {
+/* .content {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 3.5rem 0 0 17.1rem;
-  padding: .5rem;
+  margin: 3.5rem 0 0 17.2rem;
   transition: all 0.5s ease;
   color: #dad7cd;
-}
+  border: 1px solid #fff;
+} */
 
-.content.show {
+/* .content.show {
   margin-left: 0;
-}
+} */

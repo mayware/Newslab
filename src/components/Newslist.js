@@ -52,6 +52,7 @@ const Newslist = ({ news }) => {
                     ))}
                 </Carousel>
             </div>
+
         </div>
     );
 }
