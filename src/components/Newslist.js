@@ -5,9 +5,9 @@ const Newslist = ({ news }) => {
 
     return (
         <div className="news-content">
-            {/* <div className="news-track-title">
+            <div className="news-track-title">
                 <span className='news-track-title-text'>Trending news</span>
-            </div> */}
+            </div>
             <div className="news-section">
                 {news.articles.map((nws, index) => (
                     <div className="news-block" key={index}>

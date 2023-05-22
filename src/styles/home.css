@@ -1,3 +1,6 @@
-.home-content {
-    /* padding: 1rem; */
+.posts-sides-content {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    margin-top: .5rem;
 }

@@ -1,6 +1,5 @@
 .news-content {
     flex-direction: column;
-    border: 1px solid #fff;
 }
 
 .news-section {
@@ -11,9 +10,7 @@
 }
 
 .news-track-title {
-    /* width: 100%; */
-    padding: .5rem;
-    border: 1px solid #fff;
+    padding: .5rem 0 .5rem 0;
 }
 
 .news-track-title-text {

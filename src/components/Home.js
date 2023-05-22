@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import useFetch from '../useFetch';
 import Newslist from './Newslist';
 import Posts from './Posts';
+import Sideapps from './Sideapps';
 import '../styles/home.css'
 
 const Home = ({ resizeContent }) => {
@@ -10,7 +11,10 @@ const Home = ({ resizeContent }) => {
     return (
         <div className={`home-content ${resizeContent ? 'show' : ''}`}>
             {news && <Newslist news={news} />}
-            {/* <Posts /> */}
+            <main className="posts-sides-content">
+                <Posts />
+                <Sideapps />
+            </main>
         </div>
     );
 }
