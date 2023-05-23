@@ -1,5 +1,8 @@
 .news-content {
+    display: flex;
+    align-items: center;
     flex-direction: column;
+    margin: 1rem 0 1.5rem 0;
 }
 
 .news-section {
@@ -10,7 +13,8 @@
 }
 
 .news-track-title {
-    padding: .5rem 0 .5rem 0;
+    width: 100%;
+    margin-bottom: .5rem;
 }
 
 .news-track-title-text {

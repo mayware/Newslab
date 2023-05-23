@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: space-between;
     position: fixed;
-    height: 50px;
+    height: 55px;
     top: 0;
     z-index: 1;
     padding: 0 1.5rem;
@@ -59,7 +59,7 @@
 
 .brand-name-link {
     text-decoration: none;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 700;
     color: #84a98c;
 }
@@ -68,11 +68,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: .5rem;
     margin-right: .7rem;
+    padding: .5rem;
     background: none;
     color: #cad2c5;
-    border: 1px solid #84a98c;
+    border: 1px solid #343a40;
     border-radius: 5px;
     cursor: pointer;
 }
