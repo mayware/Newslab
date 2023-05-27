@@ -7,19 +7,22 @@ const Navbar = ({ sidenavToggle, linkSelect, activeLink }) => {
     return (
         <nav className="navbar">
             <div className="navbar-left">
-                {/* <button className="sidenav-btn" onClick={sidenavToggle}>
+                <button className="sidenav-btn" onClick={sidenavToggle}>
                     <span className="material-symbols-outlined btn-icon">menu</span>
-                </button> */}
+                </button>
                 <NavLink to="/" className={`navbar-link brand-name-link ${activeLink == '/' ? 'active' : ''}`} onClick={() => linkSelect('/')}>Recaller</NavLink>
             </div>
             <div className="navbar-right">
-                <button className="create-post-btn">
-                    <span className="create-btn-text">Create</span>
-                    <span className="material-symbols-outlined">add</span>
-                </button>
                 <NavLink to="/cart" className={`navbar-link ${activeLink == '/cart' ? 'active' : ''}`} onClick={() => linkSelect('/cart')}>
                     <span className="material-symbols-outlined">shopping_cart</span>
                 </NavLink>
+                <button className="create-post-btn">
+                    <span className="create-btn-text">Link</span>
+                    <span className="material-symbols-outlined">link</span>
+                </button>
+                <button className="create-post-btn">
+                    <span className="material-symbols-outlined">person</span>
+                </button>
             </div>
         </nav>
     );
