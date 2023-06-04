@@ -8,11 +8,11 @@ import Explore from './components/Explore';
 import Saved from './components/Saved';
 import Cart from './components/Cart';
 import Settings from './components/Settings';
-// e8b5910d0c7b4295a518c1d72fc16dfd
+// AIzaSyAw1BY7lyYOCYWruxzNX_HjvJx_sxP48Uc
 
 function App() {
 
-  const [showSidenav, setShowSidenav] = useState(false);
+  const [showSidenav, setShowSidenav] = useState(true);
   const [resizeContent, setResizeContent] = useState(false);
   const [activeLink, setActiveLink] = useState('');
 
@@ -36,7 +36,7 @@ function App() {
     <Router>
       <div className="App">
         <Navbar sidenavToggle={sidenavToggle} linkSelect={linkSelect} activeLink={activeLink} />
-        <Sidenav showSidenav={showSidenav} linkSelect={linkSelect} activeLink={activeLink} />
+        {showSidenav && <Sidenav showSidenav={showSidenav} linkSelect={linkSelect} activeLink={activeLink} />}
         <div className="container">
           <Routes>
             <Route exact path="/" element={<Home resizeContent={resizeContent} />} />

@@ -15,10 +15,6 @@
     background: #202020;
 }
 
-.sidenav.show {
-    display: none;
-}
-
 .sidenav-top {
     display: flex;
     align-items: center;

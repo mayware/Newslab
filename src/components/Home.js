@@ -4,11 +4,12 @@ import Newslist from './Newslist';
 import '../styles/home.css'
 
 const Home = ({ resizeContent }) => {
-    const { data: news, isPending, error } = useFetch(`https://newsapi.org/v2/top-headlines?sources=bbc-news&apiKey=e8b5910d0c7b4295a518c1d72fc16dfd`);
+    const apiKey = 'AIzaSyAw1BY7lyYOCYWruxzNX_HjvJx_sxP48Uc';
+    const { data: news, isPending, error } = useFetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&type=channel&part=snippet&eventType=live&maxResults=5`);
 
     return (
         <div className={`home-content ${resizeContent ? 'show' : ''}`}>
-            {news && <Newslist news={news} />}
+            {/* {news && <Newslist news={news} />} */}
         </div>
     );
 }

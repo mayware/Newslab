@@ -3,10 +3,10 @@ import { useEffect, useState } from 'react';
 import '../styles/sidenav.css'
 import user from '../assets/user.png'
 
-const Sidenav = ({ showSidenav, linkSelect, activeLink }) => {
+const Sidenav = ({ linkSelect, activeLink }) => {
 
     return (
-        <aside className={`sidenav ${showSidenav ? 'show' : ''}`}>
+        <aside className='sidenav'>
             <div className="sidenav-top">
                 <div className="sidenav-user-profile">
                     <Link to="/settings" className={`sidenav-link ${activeLink === '/settings' ? 'active' : ''}`} onClick={() => linkSelect('/settings')}>
