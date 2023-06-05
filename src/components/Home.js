@@ -5,7 +5,7 @@ import '../styles/home.css'
 
 const Home = ({ resizeContent }) => {
     const apiKey = 'AIzaSyAw1BY7lyYOCYWruxzNX_HjvJx_sxP48Uc';
-    const { data: news, isPending, error } = useFetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&type=channel&part=snippet&eventType=live&maxResults=5`);
+    // const { data: news, isPending, error } = useFetch(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&type=channel&part=snippet&eventType=live&maxResults=5`);
 
     return (
         <div className={`home-content ${resizeContent ? 'show' : ''}`}>

@@ -8,7 +8,6 @@ import Explore from './components/Explore';
 import Saved from './components/Saved';
 import Cart from './components/Cart';
 import Settings from './components/Settings';
-// AIzaSyAw1BY7lyYOCYWruxzNX_HjvJx_sxP48Uc
 
 function App() {
 
