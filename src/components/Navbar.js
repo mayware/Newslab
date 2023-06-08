@@ -19,14 +19,14 @@ const Navbar = ({ sidenavToggle, linkSelect, activeLink }) => {
             </div>
             <div className="navbar-right">
                 <NavLink to="/cart" className={`navbar-link ${activeLink == '/cart' ? 'active' : ''}`} onClick={() => linkSelect('/cart')}>
-                    <i class="fa-solid fa-cart-shopping"></i>
+                    <i className="fa-solid fa-cart-shopping"></i>
                 </NavLink>
                 <button className="navbar-item theme-switch-btn" onClick={switchDark}>
-                    {darkMode && <i class="fa-solid fa-sun lightModeIcon"></i>}
-                    {!darkMode && <i class="fa-solid fa-moon darkModeIcon"></i>}
+                    {darkMode && <i className="fa-solid fa-sun lightModeIcon"></i>}
+                    {!darkMode && <i className="fa-solid fa-moon darkModeIcon"></i>}
                 </button>
                 <button className="navbar-item user-account-btn">
-                    <i class="fa-solid fa-user"></i>
+                    <i className="fa-solid fa-user"></i>
                 </button>
             </div>
         </nav>

@@ -12,7 +12,6 @@ import DarkContext from './context/DarkContect';
 function App() {
 
   const [showSidenav, setShowSidenav] = useState(true);
-  const [resizeContent, setResizeContent] = useState(false);
   const [activeLink, setActiveLink] = useState('');
   const [darkMode, setDarkMode] = useState(true);
 
@@ -33,7 +32,6 @@ function App() {
 
   function sidenavToggle() {
     setShowSidenav(!showSidenav);
-    setResizeContent(!resizeContent);
   }
 
   return (
@@ -44,11 +42,11 @@ function App() {
           {showSidenav && <Sidenav showSidenav={showSidenav} linkSelect={linkSelect} activeLink={activeLink} />}
           <div className="container">
             <Routes>
-              <Route exact path="/" element={<Home resizeContent={resizeContent} />} />
-              <Route path="/explore" element={<Explore resizeContent={resizeContent} />} />
-              <Route path="/saved" element={<Saved resizeContent={resizeContent} />} />
-              <Route path="/cart" element={<Cart resizeContent={resizeContent} />} />
-              <Route path="/settings" element={<Settings resizeContent={resizeContent} />} />
+              <Route exact path="/" element={<Home />} />
+              <Route path="/explore" element={<Explore />} />
+              <Route path="/saved" element={<Saved />} />
+              <Route path="/cart" element={<Cart />} />
+              <Route path="/settings" element={<Settings />} />
             </Routes>
           </div>
         </div>

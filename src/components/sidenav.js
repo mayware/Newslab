@@ -9,19 +9,14 @@ const Sidenav = ({ linkSelect, activeLink }) => {
         <aside className='sidenav'>
             <div className="sidenav-top">
                 <div className="sidenav-user-profile">
-                    <Link to="/settings" className={`sidenav-link ${activeLink === '/settings' ? 'active' : ''}`} onClick={() => linkSelect('/settings')}>
-                        <div className="sidenav-user-logo-name">
-                            <div className="user-logo">
-                                <img src={user} alt="" className="user-logo-img" />
-                            </div>
-                            <div className="sidenav-user-name">
-                                <span className="user-name-text">Username</span>
-                            </div>
+                    <div className="sidenav-user-logo-name">
+                        <div className="user-logo">
+                            <img src={user} alt="" className="user-logo-img" />
                         </div>
-                        <div className="sidenav-user-edit">
-                            <span className="material-symbols-outlined">edit_square</span>
+                        <div className="sidenav-user-name">
+                            <span className="user-name-text">Username</span>
                         </div>
-                    </Link>
+                    </div>
                 </div>
             </div>
             <div className="sidenav-middle">
@@ -29,19 +24,19 @@ const Sidenav = ({ linkSelect, activeLink }) => {
                     <li className="list-item">
                         <Link to="/" className={`sidenav-link ${activeLink === '/' ? 'active' : ''}`} onClick={() => linkSelect('/')}>
                             <div className="sidenav-link-text">Home</div>
-                            <span className="material-symbols-outlined">home</span>
+                            <i className="fa-solid fa-house"></i>
                         </Link>
                     </li>
                     <li className="list-item">
                         <Link to="/explore" className={`sidenav-link ${activeLink === '/explore' ? 'active' : ''}`} onClick={() => linkSelect('/explore')}>
                             <span className="sidenav-link-text">Explore</span>
-                            <span className="material-symbols-outlined">explore</span>
+                            <i className="fa-solid fa-compass"></i>
                         </Link>
                     </li>
                     <li className="list-item">
                         <Link to="/saved" className={`sidenav-link ${activeLink === '/saved' ? 'active' : ''}`} onClick={() => linkSelect('/saved')}>
                             <div className="sidenav-link-text">Watchlist</div>
-                            <span className="material-symbols-outlined">visibility</span>
+                            <i className="fa-solid fa-eye"></i>
                         </Link>
                     </li>
                 </ul>
@@ -51,7 +46,7 @@ const Sidenav = ({ linkSelect, activeLink }) => {
                     <li className="list-item">
                         <Link to="/settings" className={`sidenav-link ${activeLink === '/settings' ? 'active' : ''}`} onClick={() => linkSelect('/settings')}>
                             <div className="sidenav-link-text">Settings</div>
-                            <span className="material-symbols-outlined">settings</span>
+                            <i className="fa-solid fa-gear"></i>
                         </Link>
                     </li>
                 </ul>

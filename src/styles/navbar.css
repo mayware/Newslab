@@ -4,10 +4,10 @@
     justify-content: space-between;
     position: fixed;
     height: 55px;
+    width: 100%;
     top: 0;
     z-index: 1;
-    padding: 0 .7rem;
-    width: 100%;
+    padding: 0 .9rem 0 .9rem;
     background: #202020;
     box-shadow: 0 2px 35px 0 rgb(0, 0, 0, .5);
 }
@@ -47,7 +47,7 @@
     text-decoration: none;
     background: none;
     color: #cad2c5;
-    border: 1px solid #343a40;
+    border: 1px solid transparent;
     border-radius: 5px;
     cursor: pointer;
 }
@@ -74,8 +74,11 @@
     color: #84a98c;
 }
 
+.brand-name-link:hover {
+    background: #343a40;
+}
+
 .brand-name-link.active {
-    border-color: #495057;
     background: #343a40;
 }
 
@@ -83,19 +86,18 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: .3rem;
     height: 45px;
     width: 45px;
-    margin-left: .7rem;
     font-size: 20px;
     background: none;
     color: #cad2c5;
-    border: 1px solid #343a40;
+    border: 1px solid transparent;
     border-radius: 5px;
     cursor: pointer;
 }
 
 .navbar-item:hover {
-    border: 1px solid #495057;
     background: #343a40;
 }
 
