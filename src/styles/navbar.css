@@ -64,7 +64,7 @@
     color: #84a98c;
 }
 
-.create-post-btn {
+.theme-switch-btn {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,7 +77,25 @@
     cursor: pointer;
 }
 
-.create-post-btn:hover {
+.theme-switch-btn:hover {
+    border-color: #495057;
+    color: #7ae582;
+}
+
+.use-account-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: .7rem;
+    padding: .5rem;
+    background: none;
+    color: #cad2c5;
+    border: 1px solid #343a40;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.use-account-btn:hover {
     border-color: #495057;
     background: #343a40;
 }
