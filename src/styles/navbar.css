@@ -37,6 +37,29 @@
     background: #343a40;
 }
 
+.brand-name-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 1px solid transparent;
+    font-size: 18px;
+    font-weight: 700;
+    color: #84a98c;
+}
+
+.brand-name-link:hover {
+    border-color: #495057;
+    background: #343a40;
+}
+
+.brand-name-link.active {
+    border-color: #495057;
+    background: #343a40;
+}
+
 .navbar-link {
     display: flex;
     align-items: center;
@@ -62,26 +85,6 @@
     background: #343a40;
 }
 
-.brand-name-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: .5rem;
-    border-radius: 5px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 700;
-    color: #84a98c;
-}
-
-.brand-name-link:hover {
-    background: #343a40;
-}
-
-.brand-name-link.active {
-    background: #343a40;
-}
-
 .navbar-item {
     display: flex;
     align-items: center;
@@ -98,6 +101,7 @@
 }
 
 .navbar-item:hover {
+    border-color: #495057;
     background: #343a40;
 }
 

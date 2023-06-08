@@ -29,6 +29,10 @@ html {
   background: #f1faee;
 }
 
+.container.light>.content {
+  color: #101010;
+}
+
 .content {
   display: flex;
   align-items: center;
