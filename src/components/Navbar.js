@@ -1,33 +1,32 @@
 import { NavLink } from "react-router-dom";
 import "../styles/navbar.css"
-import { useState, useEffect } from "react";
+import { useContext, useState } from "react";
+import DarkContext from "../context/DarkContect";
+
 
 const Navbar = ({ sidenavToggle, linkSelect, activeLink }) => {
 
-    const [darkMode, setDarkMode] = useState(true);
-
-    function switchDark() {
-        setDarkMode(!darkMode);
-    }
+    const { darkMode } = useContext(DarkContext);
+    const { switchDark } = useContext(DarkContext);
 
     return (
         <nav className="navbar">
             <div className="navbar-left">
                 <button className="sidenav-btn" onClick={sidenavToggle}>
-                    <span className="material-symbols-outlined btn-icon">menu</span>
+                    <i className="fa-solid fa-bars"></i>
                 </button>
-                <NavLink to="/" className={`navbar-link brand-name-link ${activeLink == '/' ? 'active' : ''}`} onClick={() => linkSelect('/')}>Recaller</NavLink>
+                <NavLink to="/" className={`brand-name-link ${activeLink == '/' ? 'active' : ''}`} onClick={() => linkSelect('/')}>Recaller</NavLink>
             </div>
             <div className="navbar-right">
                 <NavLink to="/cart" className={`navbar-link ${activeLink == '/cart' ? 'active' : ''}`} onClick={() => linkSelect('/cart')}>
-                    <span className="material-symbols-outlined">shopping_cart</span>
+                    <i class="fa-solid fa-cart-shopping"></i>
                 </NavLink>
-                <button className="theme-switch-btn" onClick={switchDark}>
-                    {darkMode && <span className="material-symbols-outlined">light_mode</span>}
-                    {!darkMode && <span className="material-symbols-outlined">dark_mode</span>}
+                <button className="navbar-item theme-switch-btn" onClick={switchDark}>
+                    {darkMode && <i class="fa-solid fa-sun lightModeIcon"></i>}
+                    {!darkMode && <i class="fa-solid fa-moon darkModeIcon"></i>}
                 </button>
-                <button className="use-account-btn">
-                    <span className="material-symbols-outlined">person</span>
+                <button className="navbar-item user-account-btn">
+                    <i class="fa-solid fa-user"></i>
                 </button>
             </div>
         </nav>

@@ -6,7 +6,7 @@
     height: 55px;
     top: 0;
     z-index: 1;
-    padding: 0 1rem;
+    padding: 0 .7rem;
     width: 100%;
     background: #202020;
     box-shadow: 0 2px 35px 0 rgb(0, 0, 0, .5);
@@ -24,6 +24,7 @@
     justify-content: center;
     padding: .5rem;
     margin-right: .5rem;
+    font-size: 20px;
     background: none;
     border: 1px solid transparent;
     border-radius: 5px;
@@ -40,11 +41,20 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: .5rem;
+    height: 45px;
+    width: 45px;
+    font-size: 20px;
+    text-decoration: none;
+    background: none;
+    color: #cad2c5;
     border: 1px solid #343a40;
     border-radius: 5px;
-    text-decoration: none;
-    color: #cad2c5;
+    cursor: pointer;
+}
+
+.navbar-link:hover {
+    border-color: #495057;
+    background: #343a40;
 }
 
 .navbar-link.active {
@@ -52,63 +62,49 @@
     background: #343a40;
 }
 
-.navbar-link:hover {
-    border: 1px solid #495057;
-    background: #343a40;
-}
-
 .brand-name-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem;
+    border-radius: 5px;
     text-decoration: none;
     font-size: 18px;
     font-weight: 700;
     color: #84a98c;
 }
 
-.theme-switch-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: .7rem;
-    padding: .5rem;
-    background: none;
-    color: #cad2c5;
-    border: 1px solid #343a40;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.theme-switch-btn:hover {
-    border-color: #495057;
-    color: #7ae582;
-}
-
-.use-account-btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: .7rem;
-    padding: .5rem;
-    background: none;
-    color: #cad2c5;
-    border: 1px solid #343a40;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.use-account-btn:hover {
+.brand-name-link.active {
     border-color: #495057;
     background: #343a40;
 }
 
-#loginLink {
-    margin-right: .5rem;
+.navbar-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    margin-left: .7rem;
+    font-size: 20px;
+    background: none;
+    color: #cad2c5;
+    border: 1px solid #343a40;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.create-btn-text {
-    margin-right: .5rem;
-    font-size: 16px;
-    font-weight: 500;
-    color: #cad2c5;
+.navbar-item:hover {
+    border: 1px solid #495057;
+    background: #343a40;
+}
+
+.lightModeIcon {
+    color: #ffd60a;
+}
+
+.darkModeIcon {
+    color: #fff;
 }
 
 .cart-link {
