@@ -12,8 +12,6 @@ html {
 
 .App {
   display: flex;
-  min-height: 100vh;
-  background: #101010;
 }
 
 .container {
@@ -22,7 +20,13 @@ html {
   justify-content: center;
   flex-direction: column;
   flex-grow: 1;
+  min-height: 100vh;
   margin-top: 55px;
+  background: #101010;
+}
+
+.container.light {
+  background: #f1faee;
 }
 
 .content {
@@ -36,6 +40,7 @@ html {
 }
 
 .posts {
+  max-width: 960px;
   width: 960px;
 }
 

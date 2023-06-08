@@ -40,7 +40,7 @@ function App() {
         <div className="App">
           <Navbar sidenavToggle={sidenavToggle} linkSelect={linkSelect} activeLink={activeLink} />
           {showSidenav && <Sidenav showSidenav={showSidenav} linkSelect={linkSelect} activeLink={activeLink} />}
-          <div className="container">
+          <div className={`container ${darkMode ? '' : 'light'}`}>
             <Routes>
               <Route exact path="/" element={<Home />} />
               <Route path="/explore" element={<Explore />} />
