@@ -7,7 +7,7 @@ const Explore = () => {
 
     return (
         <div className="content">
-            <h1>Explore page</h1>
+            <h1 className="page-title">Explore page</h1>
             {loading && <div>Loading...</div>}
             {error && <div>Error</div>}
             {data && <ExploreList output={data} />}
