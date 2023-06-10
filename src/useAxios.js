@@ -14,6 +14,7 @@ function useAxios(url) {
                 setData(response.data);
                 setError(null);
                 setLoading(false);
+                console.log(data);
             }
             catch (error) {
                 setError(error);

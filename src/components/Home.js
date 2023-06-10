@@ -4,13 +4,12 @@ import HomeData from './HomeData';
 
 const Home = () => {
 
-    // AIzaSyAw1BY7lyYOCYWruxzNX_HjvJx_sxP48Uc
+    const apiKey = 'AIzaSyAw1BY7lyYOCYWruxzNX_HjvJx_sxP48Uc';
 
-    const { data, error, loading } = useAxios('https://api.npoint.io/158e839ad0f4f057f869')
+    const { data, error, loading } = useAxios(`https://www.googleapis.com/youtube/v3/search?key=${apiKey}&type=video&part=snippet&eventType=live&q=@NBCNews`)
 
     return (
         <div className="content">
-            <h1>Home page</h1>
             {data && <HomeData data={data} />}
         </div>
     );

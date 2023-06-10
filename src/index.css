@@ -54,11 +54,17 @@ html {
   margin-bottom: .5rem;
 }
 
-.posts {
-  display: flex;
+.stream-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+.stream-video-card {
+  /* display: flex;
   align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
+  justify-content: flex-start; */
+  border: 1px solid yellow;
 }
 
 .post-image {
