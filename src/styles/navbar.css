@@ -7,7 +7,7 @@
     width: 100%;
     top: 0;
     z-index: 1;
-    padding: 0 .9rem 0 .9rem;
+    padding: 0 .9rem 0 .5rem;
     background: #202020;
     box-shadow: 0 2px 35px 0 rgb(0, 0, 0, .5);
 }
@@ -22,7 +22,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: .5rem;
+    height: 45px;
+    width: 45px;
     margin-right: .5rem;
     font-size: 20px;
     background: none;
@@ -41,7 +42,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: .5rem;
+    height: 45px;
+    width: 95px;
     border-radius: 5px;
     text-decoration: none;
     border: 1px solid transparent;

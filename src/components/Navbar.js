@@ -28,6 +28,7 @@ const Navbar = ({ sidenavToggle, linkSelect, activeLink }) => {
                 <button className="navbar-item user-account-btn">
                     <i className="fa-solid fa-user"></i>
                 </button>
+
             </div>
         </nav>
     );
