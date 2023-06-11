@@ -1,0 +1,46 @@
+.stream-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    padding: 1rem;
+    background: #202020;
+    border: 1px solid #343a40;
+    border-radius: 5px;
+}
+
+.stream-video-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    border-radius: 5px;
+    width: 275px;
+    box-shadow: 0px 0px 5px #003566;
+}
+
+.stream-video-link {}
+
+.video-poster-img {
+    height: 100%;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.video-card-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: .5rem;
+    min-height: 50px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #f1faee;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: rgba(0, 0, 0, .7);
+}

@@ -16,8 +16,6 @@ html {
 
 .container {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
   flex-grow: 1;
   min-height: 100vh;
@@ -41,34 +39,4 @@ html {
   padding: 1rem;
   width: 100%;
   color: #fff;
-}
-
-.posts {
-  max-width: 960px;
-  width: 960px;
-}
-
-.out-card {
-  border: 1px solid #343a40;
-  padding: .5rem;
-  margin-bottom: .5rem;
-}
-
-.stream-list {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 15px;
-}
-
-.stream-video-card {
-  /* display: flex;
-  align-items: flex-start;
-  justify-content: flex-start; */
-  border: 1px solid yellow;
-}
-
-.post-image {
-  margin: .5rem;
-  height: 150px;
-  width: 150px;
 }
